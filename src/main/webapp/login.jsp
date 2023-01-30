@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: jamesward
@@ -7,6 +8,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.io.*,java.util.*" %>
+<%--<c:choose>--%>
+<%--    <c:when test="${param.username.equals('admin') && param.password.equals('password')}"></c:when>--%>
+<%--    <% response.sendRedirect("/login.jsp"); %>--%>
+<%--    <c:when test="${param.username != null && param.password != null}"></c:when>--%>
+<%--</c:choose>--%>
 <%
     String username = request.getParameter("username");
     String password = request.getParameter("password");
