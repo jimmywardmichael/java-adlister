@@ -1,3 +1,5 @@
+
+
 import java.io.Serializable;
 
 public class Album implements Serializable {
@@ -7,6 +9,8 @@ public class Album implements Serializable {
     private int releaseDate;
     private double sales;
     private String genre;
+
+    public Album() {};
 
     public Album(long id, String artist, String name, int releaseDate, double sales, String genre) {
         this.id = id;
@@ -65,6 +69,15 @@ public class Album implements Serializable {
         this.genre = genre;
     }
 
-    public Album(){};
-
+    @Override
+    public String toString() {
+        return "Album{" +
+                "id=" + id +
+                ", artist='" + artist + '\'' +
+                ", name='" + name + '\'' +
+                ", releaseDate=" + releaseDate +
+                ", sales=" + sales +
+                ", genre='" + genre + '\'' +
+                '}';
+    }
 }
