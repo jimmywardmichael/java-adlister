@@ -15,4 +15,13 @@ public class BeanTest implements Serializable {
         return Quote;
     }
 
+    public String setAlbum(){
+        return Album;
+    }
+    public String setAuthor(){
+        return Author;
+    }
+    public String setQuote(){
+        return Quote;
+    }
 }
