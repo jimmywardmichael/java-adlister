@@ -1,27 +1,29 @@
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
-public class BeanTest implements Serializable {
-    private String Album;
-    private String Quote;
-    private String Author;
+public class BeanTest {
+    public static void main(String[] args) {
+        Album a1= new Album(1, "Bad Bunny", "Trapeando", 2022, 3.4, "rap");
+        Album a2= new Album(2, "Taylor Swift", "21", 2022, 1.3, "pop");
 
-    public String getAlbum(){
-        return Album;
-    }
-    public String getAuthor(){
-        return Author;
-    }
-    public String getQuote(){
-        return Quote;
-    }
+        Author author1 = new Author(1, "Yogi", "Berra");
+        Author author2 = new Author(2, "Jocko", "Willink");
 
-    public String setAlbum(){
-        return Album;
-    }
-    public String setAuthor(){
-        return Author;
-    }
-    public String setQuote(){
-        return Quote;
+        Quote q1 = new Quote(1, author1, "Its not over til its over");
+        Quote q2 = new Quote(1, author1, "If the world was perfect it wouldn't be");
+        Quote q3 = new Quote(1, author2, "Good.");
+
+        List<Album> albumList = new ArrayList<>();
+        albumList.add(a1);
+        albumList.add(a2);
+
+        List<Author> authorList = new ArrayList<>();
+        authorList.add(author1);
+        authorList.add(author2);
+
+        List<Quote> quoteList = new ArrayList<>();
+        quoteList.add(q1);
+        quoteList.add(q2);
+        quoteList.add(q3);
     }
 }
