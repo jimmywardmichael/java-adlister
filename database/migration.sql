@@ -3,6 +3,8 @@ DATABASE IF EXISTS adlister_db;
 
 CREATE DATABASE adlister_db;
 
+    USE adlister_db;
+
 CREATE TABLE users
 (
     id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -12,8 +14,7 @@ CREATE TABLE users
     PRIMARY KEY (id)
 );
 
-CREATE TABLE users
-(
+CREATE TABLE ads(
     id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_id  INT UNSIGNED NOT NULL,
     title    VARCHAR(255) NOT NULL,
