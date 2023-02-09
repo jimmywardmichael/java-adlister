@@ -1,2 +1,4 @@
-package com.codeup.adlister.dao;public class MySQLUserDao {
+package com.codeup.adlister.dao;
+
+public class MySQLUserDao implements Users{
 }
