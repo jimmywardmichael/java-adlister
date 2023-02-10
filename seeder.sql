@@ -1,4 +1,4 @@
-USE codeup_test_db;
+USE adlister_db;
 
     INSERT INTO users(username, email, password) VALUES ('bob123', 'bob@email.com', 'letmein');
 
