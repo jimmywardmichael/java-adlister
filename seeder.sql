@@ -1,6 +1,6 @@
 USE adlister_db;
 
-    INSERT INTO users(username, email, password) VALUES ('bob123', 'bob@email.com', 'letmein');
+    INSERT INTO users(username, email, password) VALUES ('John', 'john@email.com', 'john123');
 
     INSERT ads(user_id, title, description) VALUES
         (1, 'Test Ad 1', 'Test Ad Description 1'),
