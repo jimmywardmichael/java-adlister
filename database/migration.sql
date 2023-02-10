@@ -4,7 +4,7 @@ DATABASE IF EXISTS adlister_db;
 CREATE DATABASE adlister_db;
 
     USE adlister_db;
-
+DROP table users;
 CREATE TABLE users
 (
     id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -13,7 +13,7 @@ CREATE TABLE users
     password VARCHAR(100) NOT NULL,
     PRIMARY KEY (id)
 );
-
+drop table ads;
 CREATE TABLE ads(
     id       INT UNSIGNED NOT NULL AUTO_INCREMENT,
     user_id  INT UNSIGNED NOT NULL,
